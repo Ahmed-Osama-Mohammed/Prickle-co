@@ -1,0 +1,280 @@
+.bg {
+	background: #f1f1f1;
+}
+
+.title {
+    background-image: linear-gradient(rgb(18,49,50,0.18),rgb(18,49,50,0.68)), url(../../assets/Images/bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	--fill-layer-image-opacity: 0.65;
+	--fill-layer-background-media-position: fixed;
+	--fill-layer-background-media-pointer-events: none;
+	margin: 0 auto;
+	width: 95%;
+	--column-width: 51.04167vw;
+	--column-flex: 980;
+}
+
+.title svg {
+    width:fit-content;
+	height:fit-content;
+	fill: white;
+	transform: scale(0.7);
+    position: relative;
+    left: 2vw;
+}
+
+.title h2 {
+	font-size: 0.9375vw;
+	font-weight: 400;
+	color: white;
+	letter-spacing: 0.41667vw;
+	display: inline-block;
+	margin-top: 7.29167vw;
+}
+
+.title span {
+	position: relative;
+	top: 1.5625vw;
+}
+
+.underline1 {
+	border-bottom: 0.10417vw solid white;
+	width: 3.28125vw;
+	display: inline-block;
+	position: absolute;
+	top: 18.22917vw;
+}
+
+.title h1 {
+	color: white;
+	font-size: 4.6875vw;
+	font-family: "oswald";
+	letter-spacing: 0.72917vw;
+	padding-left: 0.52083vw;
+}
+
+.title p {
+	color: white;
+	font-size: 0.9375vw;
+	letter-spacing: 0.26042vw;
+	text-transform: uppercase;
+	font-weight: lighter;
+	margin-top: 1.5625vw;
+	padding-left: 0.52083vw;
+}
+
+button.btn1:hover {
+	color: black;
+	background: #d0b0a6;
+}
+
+button.btn1 {
+	width: 9.01042vw;
+	margin-top: 1.19792vw;
+	margin-bottom: 10.9375vw;
+	height: 1.82292vw;
+	font-size: 0.78125vw;
+	background: var(--color1);
+	margin-left: 1.04167vw;
+	color: white;
+	border: none;
+	transition: all .8s;
+}
+
+.collections {
+	background: #f1f1f1;
+	overflow: hidden;
+	width: 96%;
+	margin: 0 auto;
+}
+
+.cacti {
+	background: url(../../assets/Images/cacti.jpg);
+}
+
+.plants {
+	background: url(../../assets/Images/plants.jpg);
+	background-position-y: 0.52083vw;
+}
+
+.succulents {
+	background: url(../../assets/Images/succulents.jpg);
+}
+
+.cacti, .plants, .succulents {
+    width: 91%;
+	height: 32.60417vw;
+	background-size: cover;
+	background-position: 50% 50%;
+	margin: 2.60417vw 1.45833vw;
+}
+
+.collections .col-title {
+    font: 1.25vw "oswald";
+	letter-spacing: 0.15625vw;
+	text-transform: uppercase;
+	padding-top: 1.82292vw;
+	text-decoration: none;
+	display: -webkit-inline-box;
+	color: var(--color1);
+}
+
+.collections hr {
+    border-top: 0.20833vw solid var(--color1);
+	margin: 0.625vw auto 0;
+	width: 1.04167vw;
+}
+
+.collections .btn1:hover {
+    background: #d0b0a6;
+}
+
+.collections .btn1 {
+    margin-top: 0.88542vw;
+	margin-left: 0;
+}
+
+.about-us {
+    width: 93%;
+	margin: 0 auto;
+	padding-top: 1.5625vw;
+}
+
+.about-text h1 {
+    font-size: 1.19792vw;
+	font-family: 'Oswald';
+	color: var(--color1);
+	letter-spacing: 0.41667vw;
+	margin: 4.32292vw 0 0.83333vw;
+}
+
+.about-text hr {
+    margin: 1.19792vw auto;
+}
+
+.about-text {
+    background-color: white;
+}
+
+.about-text {
+    font-size: 0.78125vw;
+	color: #A05841;
+	padding: 0 10.05208vw;
+}
+
+.about1 {
+    background: url(../../assets/Images/about-us1.jpg);
+    background-size: cover;
+}
+
+.about2 {
+    background: url(../../assets/Images/about-us2.jpg);
+    background-size: cover;
+}
+.about1,.about2{
+    height: 23.927083334vw;
+}
+
+.about3 {
+    background: url(../../assets/Images/about-us3.jpg);
+	background-size: cover;
+	height: 36.45833vw;
+	background-position: 100% 100%;
+}
+
+.about-text, .about3, .about-offer {
+    min-height: 23.69792vw;
+}
+
+.about-offer {
+    background: #123031;
+}
+
+.about-offer h1 {
+    font-size: 4.58333vw;
+	font-family: 'Oswald';
+	color: white;
+	font-weight: bolder;
+	text-transform: uppercase;
+	margin: 6.04167vw 9.84375vw 1.30208vw;
+}
+
+.about-offer .btn1:hover {
+    color: white;
+	background: #3E5A5B;
+}
+
+.about-offer .btn1 {
+    transition: all 1s;
+	background: white;
+	color: #123031;
+	width: 9.53125vw;
+	height: 2.08333vw;
+	margin-bottom: 9.16667vw;
+}
+
+.special-order {
+    background-attachment: fixed;
+	background-image: linear-gradient(45deg, #ffffff4a, transparent), url(../../assets/Images/order.jpg);
+	background-size: cover;
+	margin: 0 auto;
+	width: 95%;
+	padding: 5.20833vw 0;
+	min-height: 46.875vw;
+}
+@media screen and (max-width:575px){
+    .about1 {
+        background: url(../../assets/Images/about-us1.jpg) ;
+        background-size: cover ;
+        background-position-y: 50% ;
+    }
+    
+    .about2 {
+        background: url(../../assets/Images/about-us2.jpg) ;
+        background-size: cover ;
+        background-position-y: 50% ;
+    }
+    
+}
+@media screen and (max-width:1870px){
+    .underline1{
+        display: none;
+    }
+}
+@media screen and (max-width:1440px){
+    svg{
+        transform: scale(0.6);
+        display: block;
+        position: relative;
+        left: 2vw;
+    }
+    .title h1{
+    margin-top:36px
+    }
+}
+@media screen and (max-width:991px){
+    
+    .cacti, .plants, .succulents {
+        margin: 2.60417vw 2.45833vw ;
+        width:95%
+    }
+        .about-us {
+        width: 96%;
+    }
+    .about1,.about2{
+        height: 52.927083334vw ;
+    }
+    button.btn1 {
+        width: 25.01042vw;
+        height: 4.82292vw;
+        font-size: 2.78125vw;
+    }
+    .col-title{
+        font-size:5.25vw !important;
+    }
+    .bg {
+        width: 103%;
+    }
+}

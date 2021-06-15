@@ -1,0 +1,101 @@
+<div class="bg">
+    <div class="checkout">
+        <div class="content">
+            <div class="conatiner">
+                <div class="row">
+                    <div class="col-8 ">
+                        <h1 class="title">My Cart</h1>
+                        <hr>
+                        <div class="col-12 sec">
+                            <div class="row">
+                                <div class="col-12 high" *ngFor="let product of checkout ; let i=index">
+                                    <div class="row">
+
+                                        <div class="col-2"><img src="{{product.img}}"> </div>
+                                        <div class="col-3">
+                                            <h2 class="name">{{product.name}}</h2>
+                                            <p class="price">{{product.price|currency:'$':true:'1.2-4' }}</p>
+                                        </div>
+                                        <div class="col-3">
+                                            <h2 class="quantity">{{product.quantity}}</h2>
+                                        </div>
+                                        <div class="col-3">
+                                            <h2 class="all-value">
+                                                {{product.quantity*product.price|currency:'$':true:'1.2-4' }}</h2>
+                                        </div>
+                                        <div class="col-1"> <button type="button" class="btn-close item-remove"
+                                                aria-label="Close" (click)="removeProduct(i)"></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+                        <h1 class="title">Order Sumarry</h1>
+                        <hr>
+                        <h2 class="subtotal">Subtotal<span class="subtotal-value">{{total|currency:'$':true:'1.2-4'
+                                }}</span> </h2>
+                        <h2 class="subtotal">Shipping<span class="subtotal-value">{{shipping}}</span> </h2>
+                        <p class="address">Cairo,Egypt</p>
+                        <hr>
+                        <h2 class="subtotal">Total <span class="subtotal-value">{{total|currency:'$':true:'1.2-4'
+                                }}</span></h2>
+                        <button type="button" class="btn1"><span>
+                                <svg width="11" height="14" viewBox="0 0 11 14" xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="currentColor" fill-rule="evenodd">
+                                        <path
+                                            d="M0 12.79c0 .558.445 1.01.996 1.01h9.008A1 1 0 0011 12.79V6.01c0-.558-.445-1.01-.996-1.01H.996A1 1 0 000 6.01v6.78z">
+                                        </path>
+                                        <path
+                                            d="M9.5 5v-.924C9.5 2.086 7.696.5 5.5.5c-2.196 0-4 1.586-4 3.576V5h1v-.924c0-1.407 1.33-2.576 3-2.576s3 1.17 3 2.576V5h1z"
+                                            fill-rule="nonzero"></path>
+                                    </g>
+                                </svg>
+                                Checkout
+                            </span></button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="promo-note">
+                <svg viewBox="0 0 14 16" fill="currentColor" width="14" height="16">
+                    <g id="final-cart" stroke="none" fill="none" stroke-width="1" fill-rule="evenodd">
+                        <g id="general-layout" transform="translate(-515 -839)" fill="currentColor">
+                            <g id="coupon-icon" transform="rotate(30 -1300.653 1393.349)">
+                                <path
+                                    d="M1,14.0046024 C0.999339408,13.9996515 9.00460243,14 9.00460243,14 C8.99965149,14.0006606 9,5.41421356 9,5.41421356 L5,1.41421356 L1,5.41421356 L1,14.0046024 Z M-2.72848411e-12,5 L5,-4.66116035e-12 L10,5 L10,14.0046024 C10,14.5543453 9.5443356,15 9.00460243,15 L0.995397568,15 C0.445654671,15 -2.72848411e-12,14.5443356 -2.72848411e-12,14.0046024 L-2.72848411e-12,5 Z"
+                                    id="Rectangle-6" fill-rule="nonzero"></path>
+                                <circle id="Oval-2" cx="5" cy="5" r="1"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <button type="button" (click)="openKey1()" *ngIf="key1">Enter a promo code</button>
+                <input type="text" placeholder="Enter a promo code" class="promo" maxlength="6"
+                    (keydown.enter)="onKeydown()" [(ngModel)]="promo" *ngIf="!key1">
+                <p class="used" *ngIf="this.promoCode.isUsed">This promo code is used</p>
+                <p class="used" *ngIf="this.promoCode.inValid">Please enter a valid promo code</p>
+            </div>
+
+            <div class="promo-note">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" class="TUZIb">
+                    <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+                        <g transform="translate(-515 -882)">
+                            <g transform="translate(515 882)">
+                                <path stroke="currentColor" d="M.5.5h7.778L11.5 3.737V12.5H.5V.5z"></path>
+                                <path stroke="currentColor" d="M10.793 3.5H8.5V1.207L10.793 3.5z"></path>
+                                <path fill="currentColor" d="M3 3H6V4H3z"></path>
+                                <path fill="currentColor" d="M3 6H9V7H3z"></path>
+                                <path fill="currentColor" d="M3 9H9V10H3z"></path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <button type="button" (click)="openKey2()" *ngIf="key2">Add Note</button>
+                <textarea type="text" placeholder="Add Note" class="note" *ngIf="!key2"></textarea>
+
+            </div>
+        </div>
+    </div>
+</div>

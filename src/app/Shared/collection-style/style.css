@@ -1,0 +1,302 @@
+.bg {
+	background: #f1f1f1;
+}
+
+.col-welcome {
+	min-height: 33.85417vw;
+	width: 95%;
+	margin: 0 auto;
+	padding-top: 10.64583vw;
+	text-align: center;
+	color: #FFF;
+}
+
+.col-welcome .shop-all:hover {
+	color: #E8CFC8;
+	transform: scale(1.1);
+}
+
+.col-welcome .shop-all {
+	transition: all linear .5s;
+	margin: 1.875vw 0;
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 0.88542vw;
+}
+
+.welcome-title {
+	font-size: 5.05208vw;
+	font-weight: 600;
+	font-family: 'Oswald';
+	width: 33%;
+	margin: 5.20833vw auto 1.30208vw;
+	line-height: 5.72917vw;
+}
+
+.col-welcome p {
+	margin: 0 auto 1.71875vw;
+	width: 36%;
+	font-size: 0.83333vw;
+}
+
+.scroll {
+	border: none;
+	background: url(../../../assets/Images/scroll.jpg);
+	font-size: 2.60417vw;
+	font-weight: 100;
+	height: 2.08333vw;
+	width: 2.08333vw;
+	border-radius: 1.5625vw;
+	color: darkgray;
+	margin-bottom: 7.8125vw;
+	display: inline-block;
+}
+
+.sp {
+	position: relative;
+	right: 0.20833vw;
+	bottom: 1.25vw;
+}
+
+.collections {
+	margin: 0 auto;
+	width: 97%;
+}
+
+.collections .title {
+	text-align: center;
+	margin: 3.125vw 0 2.08333vw;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 2.44792vw;
+	font-family: 'Oswald-light';
+}
+
+.image {
+	height: 29.53125vw;
+	width: 88%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.image:hover .view {
+	color: var(--color1);
+	line-height: 3.125vw;
+	height: 3.125vw;
+}
+
+.view {
+	background: white;
+	width: 100%;
+	right: 0;
+	position: absolute;
+	bottom: 0;
+	line-height: 0;
+	color: transparent;
+	transition: all linear .5s;
+	height: 0;
+}
+
+.collections a {
+	display: block;
+}
+
+.col-title {
+	color: var(--color1);
+	font-size: 0.9375vw;
+	text-decoration: none;
+	text-transform: capitalize;
+	margin: 0.625vw 0;
+}
+
+.collections p {
+	display: inline-block;
+	color: var(--color1);
+	font-size:0.88542vw;
+}
+
+.collections .price-old {
+	text-decoration: line-through;
+	padding-right: 0.78125vw;
+}
+
+button.btn1:hover {
+	color: #6d6d6d;
+	background: #d0b0a6;
+}
+
+button.btn1 {
+	display: block;
+	width: 89%;
+	margin: 1.30208vw auto;
+	height: 1.82292vw;
+	font-size: 0.78125vw;
+	background: var(--color1);
+	color: white;
+	border: none;
+	transition: all .5s;
+}
+
+.note {
+	background: #223a39;
+	display: block;
+	width: 7.29167vw;
+	height: 2.08333vw;
+	line-height: 2.08333vw;
+	font-size: 1vw;
+	color: white;
+	font-family: 'Oswald';
+	text-transform: capitalize;
+}
+
+.cacti-welcome {
+	background: url(../../../assets/Images/cacti-bg.jpg);
+    background-size: cover;
+    
+}
+
+.cacti1 .image {
+    background: url(../../../assets/Images/cacti1.jpg);
+    background-size: cover;
+}
+
+.cacti1 .image:hover {
+    background: url(../../../assets/Images/cacti1hover.jpg);
+    background-size: cover;
+}
+
+.cacti2 .image {
+    background: url(../../../assets/Images/cacti2.jpg);
+    background-size: cover;
+}
+
+.cacti3 .image {
+    background: url(../../../assets/Images/cacti3.jpg);
+    background-size: cover;
+}
+
+.cacti4 .image {
+    background: url(../../../assets/Images/cacti4.jpg);
+    background-size: cover;
+}
+
+.cacti5 .image {
+    background: url(../../../assets/Images/cacti5.jpg);
+    background-size: cover;
+}
+
+.cacti6 .image {
+    background: url(../../../assets/Images/cacti6.jpg);
+    background-size: cover;
+}
+
+.plant-welcome {
+    background: url(../../../assets/Images/plants-bg.jpg);
+    background-size: cover;
+}
+
+.plant1 .image {
+    background: url(../../../assets/Images/plant1.jpg);
+    background-size: cover;
+}
+
+.plant1 .image:hover {
+    background: url(../../../assets/Images/plant1hover.jpg);
+    background-size: cover;
+}
+
+.plant2 .image {
+    background: url(../../../assets/Images/plant2.jpg);
+    background-size: cover;
+}
+
+.plant3 .image {
+    background: url(../../../assets/Images/plant3.jpg);
+    background-size: cover;
+}
+
+.plant4 .image {
+    background: url(../../../assets/Images/plant4.jpg);
+    background-size: cover;
+}
+
+.plant5 .image {
+    background: url(../../../assets/Images/plant5.jpg);
+    background-size: cover;
+}
+
+.plant6 .image {
+    background: url(../../../assets/Images/plant6.jpg);
+    background-size: cover;
+}
+
+.succulent-welcome {
+    background: url(../../../assets/Images/succulents-bg.jpg);
+    background-size: cover;
+}
+
+.succulents1 .image {
+    background: url(../../../assets/Images/succulent1.jpg);
+    background-size: cover;
+}
+
+.succulents1 .image:hover {
+    background: url(../../../assets/Images/succulent1-hover.jpg);
+    background-size: cover;
+}
+
+.succulents2 .image {
+    background: url(../../../assets/Images/succulent2.jpg);
+    background-size: cover;
+}
+
+.succulents3 .image {
+    background: url(../../../assets/Images/succulent3.jpg);
+    background-size: cover;
+}
+
+.succulents4 .image {
+    background: url(../../../assets/Images/succulent4.jpg);
+    background-size: cover;
+}
+
+.succulents5 .image {
+    background: url(../../../assets/Images/succulent5.jpg);
+    background-size: cover;
+}
+
+.succulents6 .image {
+    background: url(../../../assets/Images/succulent6.jpg);
+    background-size: cover;
+}
+
+.all-welcome {
+    background: url(../../../assets/Images/allgreen-bg.jpg);
+    background-size: cover;
+}
+
+.cacti-welcome, .plant-welcome, .succulent-welcome, .all-welcome {
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.editor {
+	display: none;
+}
+
+button.btn.btn-primary {
+	margin: 0 0.72917vw;
+	background: var(--color1);
+	border-color: var(--color1);
+}
+
+.curancy, .editor-btns {
+	display: inline-block;
+}
+
+.btn-primary:focus {
+	color: #fff;
+	background-color: #a51;
+	box-shadow: 0 0 0 0.25rem #aa55113d;
+}

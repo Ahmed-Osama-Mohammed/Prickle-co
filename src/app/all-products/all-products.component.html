@@ -1,0 +1,42 @@
+<div class="bg">
+    <div class="all-welcome col-welcome">
+        <h1 class="welcome-title">EVERYTHING THAT GROWS IN OUR GARDEN  </h1>
+        <p>I'm a paragraph. here you add your own text and edit me. It’s easy. Just replace this text in p with your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+        <a href="shop-all/#collections" class="scroll shake-little"></a>
+    </div>
+
+    <div class="collections" id="collections">
+        <h1 class="title"> SHOP ALL</h1>
+        <div class="row justify-content-between">
+            <div class="col-sm-12 col-md-12 col-lg-4 text-center p-0 " *ngFor="let collect of allCollections;let i=index">
+                <div [class]=collect.name>
+                    <div class="image" (click)="selectedProduct(i)">
+                        <span class="note" *ngIf="collect.bestSeller">Best seller</span>
+                        <span class="note" *ngIf="collect.newArrival">new arrival</span>
+                        <span class="view">Quick View</span>
+                    </div>
+                     <a href="" class="col-title"> <span>I'm  </span> {{ collect.name}}</a>
+                     <div class="curancy" >
+                         <div id="edit-sec{{collect.id}}">
+                             <p class="price-old">{{collect.priceBefore| currency:'$':true:'2.2-4'}}</p>
+                             <p>{{collect.price |currency:'$':true:'1.2-4' }}</p>
+                            </div>
+                         <div class="editor" id="editor{{collect.id}}">
+                            <input type="number"  id="{{collect.id}}"  value="{{collect.price}}">
+                         </div>
+                    </div>
+                    <div class="editor-btns" *ngIf="isAdmin[0].isAdmin">
+                        <button type="button" class="btn btn-primary"  (click)="edit(i)" >Edit</button>
+                        <button type="button" class="btn btn-primary" (click)="setValue(i)" >Set</button>
+                    </div>
+
+                        <button class="btn1" (click)="selectedProduct(i)">Add To Cart</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

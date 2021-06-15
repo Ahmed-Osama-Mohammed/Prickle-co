@@ -1,0 +1,43 @@
+<div class="reg" id="login">
+<div class="info">
+    <div id="info">
+
+        <h1>Log In</h1>
+        <p>New to this site?</p><button class="btn-s" (click)="goSignUp()" >Sign Up</button>
+        <form [formGroup] = "LoginForm" (ngSubmit) = "onSubmit()">
+    <div class="container-fluid">
+        <div class="row">
+        </div>
+        <div class="col-12">
+            <label for="email">Email<br>
+                <input type="email"  name="email" formControlName="email">
+              <span *ngIf="email?.invalid && (email?.touched || email?.dirty)" >Email cannot be blank</span>
+              <br>
+            </label><br>
+          </div>
+          <div class="col-12">
+              
+              <label for="password">Password</label><br>
+              <input type="password"  name="password" formControlName="password"><br>
+              <span *ngIf="password?.invalid && (password?.touched || password?.dirty)" >Make sure you enter a password.</span>
+              
+            </div>
+            <button type="button" class="btn-f" (click)="restPassword()">Forgot password?</button>
+            <p class="terms">
+                By logging in, you agree to <a href="#">our Terms of Use</a> and to receive emails & updates and acknowledge that you read our <a href="#" >  Privacy Policy
+                </a>.
+          </p>
+          
+          <div class="col-12">
+              <button type="submit" (click)="logIn()" [disabled]="LoginForm.invalid" >Log In</button>
+            </div>
+        </div>
+        
+    </form>
+</div>
+<div id="login-sucess">
+    <h3 class="sucess">You Successfully loged in !</h3>
+</div>
+</div>
+<button type="button" class="close" (click)="close()">X</button>
+</div>

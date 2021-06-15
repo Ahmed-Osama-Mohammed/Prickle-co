@@ -1,0 +1,52 @@
+<div class="sp-form">
+    
+    <h1 class="special-req">FOR SPECIAL REQUESTS & ORDERS
+    </h1>
+    <hr>
+    <form [formGroup] = "specialOrderForm" (ngSubmit) = "onSubmit()">
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+                <label for="fname">First name<span class="req">*</span><br>
+                    <input type="text"  name="fname" formControlName="firstName"><br>
+                    <ng-container>
+                        <span *ngIf="firstName?.invalid && (firstName?.touched || firstName?.dirty) || firstName?.errors?.invalidName" >Firstname is invalid</span>
+                    </ng-container>
+                </label><br>
+            </div>
+            
+            <div class="col-md-6">
+                <label for="lname">Last name<span class="req">*</span><br>
+                    <input type="text"  name="lname" formControlName="lastName"><br>
+                    <span *ngIf="lastName?.invalid && (lastName?.touched || lastName?.dirty) || lastName?.errors?.invalidName" >Lastname is invalid</span>
+                    
+                </label><br>
+                
+            </div>
+            <div class="col-12">
+            <label for="email">Email<span class="req">*</span><br>
+                <input type="email" name="email" formControlName="email">
+                <span *ngIf="email?.invalid && (email?.touched || email?.dirty)">This email is invalid</span>
+                <br>
+            </label><br>
+            </div>
+            <div class="col-12">
+                
+            <label for="phone">Phone</label><br>
+            <input type="text"  name="phone" formControlName="phone"><br>
+            
+            </div>
+            
+            <div class="col-12">
+                <label for="msg">Massage</label><br>
+            <textarea type="text"  name="msg" formControlName="massage" maxlength="500" placeholder="Leave your message here ..." rows="5"  ></textarea><br>
+            
+            </div>
+            
+            <div class="col-12">
+                <button type="submit" [disabled]="specialOrderForm.invalid" >Submit</button>
+            </div>
+          </div>
+      </div>
+    </form>
+</div>

@@ -1,0 +1,266 @@
+.add-bg {
+    position: fixed;
+	top: 0;
+	bottom: 0;
+    background: #6666678f;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	display: none;
+}
+
+.btn-close {
+    position: relative;
+	left: 97%;
+	top: 0.625vw;
+    font-size: 0.884vw;
+}
+
+.content {
+    background: #fbfbfb;
+	width: 50%;
+	margin: 8% auto;
+	min-height: 33.85417vw;
+	z-index: 2;
+}
+
+.btn-close:focus {
+    box-shadow: unset;
+}
+
+.info {
+    padding: 2.60417vw 0 1.5625vw 1.35417vw;
+	color: var(--color1);
+}
+
+h1 {
+    text-transform: capitalize;
+	font-size: 1.82292vw;
+	font-family: 'Oswald';
+	letter-spacing: 0.15625vw;
+}
+
+h2 {
+    margin-bottom: 1.04167vw;
+	font-size: 1.30208vw;
+	font-weight: 400;
+}
+
+p {
+    color: gray;
+	font-size: 0.72917vw;
+}
+
+input#quantity {
+    display: block;
+	width: 100%;
+	height: 2.13542vw;
+	margin: 0.78125vw 0 2.08333vw;
+	border: 0.05208vw solid #c9c9c9;
+	padding-left: 40%;
+}
+
+button {
+    display: block;
+    font-size:.8887vw
+}
+
+label {
+    color: black !important;
+    font-size:.8887vw
+}
+
+.add:hover {
+    color: #311e1e;
+	background: #d0b0a6;
+}
+
+.add {
+    border: none;
+	width: 90%;
+	color: white;
+	height: 2.60417vw;
+	background: var(--color1);
+	margin-bottom: 1.04167vw;
+}
+
+.view {
+    color: #787879;
+    font-size:.8887vw
+}
+
+.view:hover {
+    color: var(--color1);
+}
+
+.cart-sidebar {
+    background: white;
+	width: 20%;
+	position: fixed;
+	right: -20.83333vw;
+	top: 3.07292vw;
+	bottom: 0;
+	z-index: 1;
+	border-left: 0.05208vw solid gainsboro;
+	border-top: 0.05208vw solid gainsboro;
+	transition: all .5s linear;
+	z-index: 2;
+}
+
+.title {
+    color: var(--color1);
+	font-size: 1.66667vw;
+	font-family: 'Oswald-Light';
+	letter-spacing: 0.10417vw;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 33%;
+}
+
+.extend {
+    border: none;
+	background: no-repeat;
+	padding-left: 0.625vw;
+	display: inline;
+}
+
+.contents {
+    padding-top: 6%;
+	height: 12%;
+}
+
+.side-bg {
+    background: #6666678f;
+    position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+	z-index: 1;
+}
+
+.buy {
+	width: 5.36458vw;
+	height: 4.94792vw;
+	border: solid var(--color1) 0.05208vw;
+}
+
+.title-cart {
+	font-size: 0.83333vw;
+    	font-weight: lighter;
+	line-height: 1.25vw;
+	margin-bottom: 0.52083vw;
+	width: 90%;
+	word-break: break-word;
+	margin-bottom: 0;
+	color: var(--color1);
+}
+
+.price-cart {
+	font-size: 0.83333vw;
+	color: var(--color1);
+	font-weight: 800;
+	margin: 0.52083vw 0;
+}
+
+.quantity-cart {
+	color: var(--color1);
+	padding-left: 1.30208vw;
+	width: 3.125vw;
+	border: solid 0.05208vw var(--color1);
+	margin: 0.78125vw 0vw 0vw;
+}
+
+.products {
+	min-height: 6.5625vw;
+	padding: 1.04167vw 0;
+	margin: 0 auto;
+	width: 87%;
+	border-bottom: 0.05208vw solid var(--color1);
+}
+
+.sub-total {
+	background: white;
+	height: 13.02083vw;
+	position: fixed;
+	bottom: 0;
+	width: 21%;
+	color: var(--color1);
+	font-size: 1.5625vw;
+	padding: 1.5625vw;
+}
+
+.sub-total h2 {
+	border-bottom: 1fhd solid var(--color1);
+	padding-bottom: 20fhd;
+	margin-bottom: 0;
+}
+
+.show-cart:hover {
+	color: #311e1e;
+	background: #d0b0a6;
+}
+
+.products-container {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 27.60417vw;
+}
+
+.item-remove {
+	display: none;
+}
+
+.products:hover .item-remove {
+	display: block;
+}
+
+.products-container::-webkit-scrollbar {
+	width: 0.625vw;
+  /* width of the entire scrollbar */;
+}
+
+.products-container::-webkit-scrollbar-track {
+	background: white;
+  /* color of the tracking area */;
+}
+
+.products-container::-webkit-scrollbar-thumb {
+	background-color: var(--color1);
+	border: white solid 0.05208vw;
+  /* color of the scroll thumb */;
+}
+
+.show-cart {
+	margin-top: 1.66667vw;
+	border: none;
+	background: var(--color1);
+	color: white;
+	width: 95%;
+	font-size: 0.83333vw;
+	height: 2.60417vw;
+}
+
+.cart-number {
+	color: white;
+	z-index: 6;
+	position: fixed;
+	top: 1.19792vw;
+	right: 2.76042vw;
+}
+
+.btn-number {
+	border: none;
+	background: transparent;
+	color: white;
+}
+@media screen and (max-width:1870px){
+    .cart-number {
+   display:none
+
+}
+.cart-sidebar{
+top:66.667%;
+}
+}

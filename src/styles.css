@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/CSS/font-awesome.min.css";
+
+@font-face{
+    font-family: Oswald ;
+    src: url(./assets/Fonts/Oswald-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: Oswald-Light ;
+    src: url(./assets/Fonts/Oswald-Light.ttf);
+}
+
+:root{
+    --color1: #a05841;
+    scroll-behavior: smooth;
+
+}
+*:focus{
+    outline: none;
+   }
+   body::-webkit-scrollbar {
+    width: 12px;           
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: white;      
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--color1);
+  }

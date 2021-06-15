@@ -1,0 +1,123 @@
+.bg {
+	background: #f1f1f1;
+}
+
+.contacts {
+	padding-top: 4.16667vw;
+	background-color: #123132;
+	color: white;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.contact-header {
+	margin-bottom: 2.08333vw;
+	text-align: center;
+	font-size: 1.09375vw;
+	text-transform: uppercase;
+	letter-spacing: 0.36458vw;
+	font-family: 'Oswald';
+}
+
+p {
+	margin: 0;
+    font-size:.8333334vw
+}
+
+.row a {
+    display: block;
+	color: #fff;
+	text-decoration: underline;
+    font-size:.8333334vw
+}
+
+.info {
+	margin: 0 auto;
+	width: 54.6875vw;
+}
+
+label {
+	font-size: 0.83333vw;
+	padding: 0 0 0.46875vw;
+	font-weight: lighter;
+	margin: 0 1.04167vw 0 0;
+	font-family: monospace;
+}
+
+.subscribe {
+	width: 24.47917vw;
+	margin: 0 auto;
+}
+
+.subscribe .contact-header {
+	margin-top: 2.60417vw;
+}
+
+.subscribe input {
+	border: 0.15625vw solid white;
+	background: transparent;
+	width: 13.54167vw;
+	height: 2.08333vw;
+	color: white;
+	margin-top: 0.52083vw;
+}
+
+.subscribe .btn1:hover {
+	color: white;
+	background: #3E5A5B;
+}
+
+.subscribe .btn1 {
+	transition: all 1s;
+	background: white;
+	color: #123031;
+	width: 9.53125vw;
+	height: 2.08333vw;
+	border: none;
+    font-size:.8333334vw
+
+}
+
+input.ng-invalid.ng-touched {
+	border: 0.15625vw solid #ff4040;
+	z-index: 2;
+}
+
+.social-media {
+	padding: 3.125vw 0;
+	height: 10.41667vw;
+}
+
+.social-media a:hover {
+	color: var(--color1);
+	font-size: 2.08333vw;
+}
+
+.social-media a {
+	transition: all .5s;
+	color: white;
+	margin: 0 1.04167vw;
+	font-size: 1.30208vw;
+}
+#map button{
+    border: none;
+}
+#map img{
+    width: 89vw;
+    position: absolute;
+    left: 5.18vw;}
+
+iframe {
+	width: 89.63542vw;
+	height: 26.19792vw;
+}
+
+.contain img {
+	position: absolute;
+	transform: scale(1.01);
+}
+
+.contain {
+	margin: 0 auto;
+	width: 95%;
+}

@@ -1,0 +1,70 @@
+<div class="reg" id="signup">
+    <div class="info">
+    <div  id="signup-info">
+
+        <h1>Sign Up</h1>
+        <p>Already a member?</p><button class="btn-s" (click)="goLogIn()">Log In</button>
+        <form [formGroup] = "SignUpForm" (ngSubmit) = "onSubmit()">
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="fname">First Name <br>
+                        <input type="text"   name="fname" formControlName="firstName"><br>
+                        <ng-container>
+                            <span *ngIf="f.firstName?.errors?.required">First Name is required</span>
+                            
+                            <span *ngIf="f.firstName?.invalid && (f.firstName?.touched || f.firstName?.dirty) || f.firstName?.errors?.invalidName" >Firstname is invalid</span>
+                        </ng-container>
+                    </label><br>
+                </div>
+                
+                <div class="col-md-6">
+                    <label for="lname">Last Name <br>
+                        <input type="text"  name="lname" formControlName="lastName"><br>
+                        <span *ngIf="f.lastName?.invalid && (f.lastName?.touched || f.lastName?.dirty) || f.lastName?.errors?.invalidName" >Lastname is invalid</span>
+                        
+                    </label><br>
+                    
+                </div>
+                <div class="col-12">
+                    <label for="email">Email <br>
+                        <input type="email"  name="email" formControlName="email" (change)="checkExist()">
+                        <span *ngIf="f.email?.errors?.required">Email is required</span>
+                        <span *ngIf="f.email?.errors?.emailExists">Email is Exists</span>
+                        <span *ngIf="f.email?.errors?.email">Email must be a valid email address</span>                  <br>
+                    </label><br>
+                </div>
+                <div class="col-6">
+                    
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" formControlName="password"><br>
+                    <span *ngIf="f.password?.errors?.required">Password is required</span>
+                    <span *ngIf="f.password?.errors?.minlength">Password must be at least 6 characters</span>    
+                </div>
+                <div class="col-6">
+                    
+                    <label for="conpassword">Confirm Password</label><br>
+              <input type="password"  name="conpassword" formControlName="confirmPassword"><br>
+              <span *ngIf="f.confirmPassword?.errors?.required">Confirm Password is required</span>
+              <span *ngIf="f.confirmPassword?.errors?.wrongPassword">Passwords must match</span>    
+            </div>
+              <p class="terms">
+                  <input type="checkbox" class="checkbox" name="terms" formControlName="terms" >
+                  <label for="terms"> agree to <a href="#">our Terms of Use</a> and to receive emails & updates and acknowledge that you read our <a href="#" >  Privacy Policy
+                </a>.</label><br>
+                <span *ngIf="f.terms?.errors">Must accept our terms</span>   
+            </p>
+              <div class="col-12">
+                  <button type="submit" [disabled]="SignUpForm.invalid" >Submit</button>
+                </div>
+            </div>
+        </div> 
+    </form>
+</div>
+<div id="sucess-signup">
+    <h3 class="sucess">You Successfully Signed up !</h3>
+    <h3 id='success'> You can now <button class="btn-sucess" (click)='goLogIn()'>Log In</button></h3>
+</div>
+</div>
+<button type="button" class="close" (click)="close()">X</button>
+</div>

@@ -1,0 +1,73 @@
+<div class="cart-number">
+   <button type="button" class="btn-number" (click)="openCart()">{{totalQuantity}}</button>
+</div>
+
+<div class="add-bg" id="add">
+
+    <div class="content">
+        <div class="container">
+            <button type="button" class="btn-close" aria-label="Close" (click)="closed()"></button>
+            <div class="row">
+                <div class="col-7" id="img">
+
+                </div>
+                <div class="col-5 info">
+                    <h1 id="title">product</h1>
+                    <h2 id="price"></h2>
+                    <p id="serialNum">SKU:0001</p>
+                    <label for="quantity">Quantity:
+                        <input type="number" id="quantity" name="quantity" min="0" max="10" value="1"
+                            [(ngModel)]="quantity">
+                    </label>
+                    <button type="button" class="add" ng-model="quantity"
+                        (click)="getCartItemsNum(); addToCart(); setTotal()">Add
+                        to cart</button>
+                    <a href="" class="view">view more details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="side-bg " id="bg" (click)="extend()">
+
+</div>
+<div class="cart-sidebar" id="side-bar">
+    <div class="contents">
+        <button type="button" class="extend" (click)="extend()"><img src="../../assets/Images/icon-expand.png"></button>
+        <h1 class="title">Cart</h1>
+    </div>
+    <div class="products-container">
+        <div class="products" *ngFor="let product of selectedProducts; let i =index">
+            <div *ngIf="product.name !==selectedProducts[i-1]?.name">
+                <div class="container">
+                    <div class="row">
+
+
+                        <div class="col-5 offset-1">
+                            <img src="{{product.img}}" class="buy">
+                        </div>
+                        <div class="col-5">
+                            <h1 class="title-cart">{{product.name}} </h1>
+                            <h2 class="price-cart">{{product.price*product.quantity|currency:'$':true:'1.2-4' }}</h2>
+                            <p class="quantity-cart"> {{product.quantity}}</p>
+                        </div>
+                        <div class="col-1"> <button type="button" class="btn-close item-remove" aria-label="Close"
+                                (click)="removeProduct(i)"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <div class="sub-total" *ngIf="selectedProducts.length!=0">
+        Subtotal:
+        <h2>
+            {{total|currency:'$':true:'1.2-4' }}
+        </h2>
+        <button type="button" class="show-cart" [routerLink]="['checkout']" (click)="extend()">Show Cart</button>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+#signup{
+    background: url(../../assets/Images/signup-ng.png);
+    background-size: cover;
+    background-position-y: 88%;
+}
+#terms{
+    width:auto !important;
+}
+label{
+    display: inline;
+}
+p{
+    display: initial;
+    padding: 1.614583334vw 1.09375vw 0 !important;
+    text-align: start;
+}
+#sucess-signup{
+    display:none; 
+    margin-bottom: 5.2083334vw;
+}
+.sucess{
+    margin: 5.20833vw 10.416667vw 0;
+}
+h3{
+  font-size: 0.09375vw;
+}
+.btn-sucess {
+    background-color: transparent;
+    color: #943010;
+    width: auto;
+    height: none;
+    text-decoration: underline;
+    margin: .57291667vw 0;
+}
+.checkbox{
+    width:2%
+}

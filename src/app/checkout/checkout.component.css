@@ -1,0 +1,140 @@
+.bg {
+	background: #f1f1f1;
+}
+
+.checkout {
+	width: 95%;
+	background: white;
+	margin: 0 auto;
+	min-height: 49.47917vw;
+}
+
+.content {
+	padding-top: 14%;
+	width: 66%;
+	margin: 0 auto;
+}
+
+img {
+	width: 5.20833vw;
+	height: 5.20833vw;
+	border: 0.05208vw solid rgba(160, 88, 65, 0.6);
+}
+
+h1.title {
+	font-size: 1.45833vw;
+	color: var(--color1);
+	padding: 0.52083vw 0;
+}
+
+hr {
+	color: var(--color1);
+	margin: 0;
+}
+
+h2.name {
+	color: var(--color1);
+	font-size: 1.09375vw;
+	font-family: 'Oswald-Light';
+	margin-top: 0.26042vw;
+}
+
+p.price {
+	color: rgba(160, 88, 65, 0.6);
+	font-weight: 500;
+	font-size: .887vw;
+}
+
+h2.quantity {
+	border: 0.05208vw solid rgba(160, 88, 65, 0.6);
+	width: 5.20833vw;
+	font-size: 0.9375vw;
+	height: 1.5625vw;
+	float: right;
+	padding: 0.15625vw 2.29167vw;
+	color: var(--color1);
+}
+
+h2.all-value {
+	font-size: 1.09375vw;
+	color: var(--color1);
+	margin: 0 auto;
+	text-align: center;
+}
+
+.high {
+	margin: 1.82292vw 0;
+	min-height: 7.29167vw;
+	border-bottom: solid rgb(232 214 208) 0.05208vw;
+}
+
+h2.subtotal {
+	font-size: 1.09375vw;
+	margin: 1.61458vw 0 0;
+	color: var(--color1);
+}
+
+span.subtotal-value {
+	float: right;
+	margin-right: 1.40625vw;
+}
+
+p.address {
+	color: var(--color1);
+	margin: 0.26042vw 0 1.77083vw;
+	text-decoration: underline;
+	font-size: .8887vw;
+}
+
+.btn1 {
+	margin-top: 1.04167vw;
+	width: 21.04167vw;
+	background: var(--color1);
+	border: none;
+	color: white;
+	height: 2.60417vw;
+	font-size:0.877vw
+}
+
+.sec {
+	height: 21.61458vw;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.sec::-webkit-scrollbar {
+	width: 0.625vw;
+  /* width of the entire scrollbar */;
+}
+
+.sec::-webkit-scrollbar-track {
+	background: white;
+  /* color of the tracking area */;
+}
+
+.sec::-webkit-scrollbar-thumb {
+	background-color: var(--color1);
+	border: white solid 0.05208vw;
+  /* color of the scroll thumb */;
+}
+
+.promo-note, .promo-note button {
+	color: var(--color1);
+	background: none;
+	border: none;
+}
+
+.promo-note button {
+	text-decoration: underline;
+}
+
+.promo-note button, .promo-note input {
+	margin: 0.78125vw 0.52083vw;
+}
+
+textarea, .promo {
+	border: solid 0.05208vw var(--color1);
+}
+button{
+	font-size:.8887vw
+}

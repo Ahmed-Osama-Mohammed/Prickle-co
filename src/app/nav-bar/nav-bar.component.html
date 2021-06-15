@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid color1">
+      <a class="navbar-brand" [routerLink]="['']">{{ brand.name+"." | uppercase }}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="dropbtn">Shop</button>
+              <div class="dropdown-content">
+                <a class="nav-link" [routerLink]='["cacti"]'>Cacti</a>
+                <a class="nav-link" [routerLink]='["plants"]'>Plants</a>
+                <a class="nav-link" [routerLink]='["succulents"]'>Succulents</a>
+              </div>
+            </div>
+           
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="/#about">About</a>
+          </li>
+    
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]='["faq"]'>FAQ</a>
+          </li>
+    
+          <li class="nav-item">
+            <a class="nav-link" href="/#contact">Contact</a>
+          </li>
+      
+        </ul>
+        
+      </div>
+      <div class="justify-content-end px-3 ">
+        <span class="navbar-text mx-3" id="call">Call Us Now! {{brand.phone}} </span>
+       <div id="nav-log">
+
+         <button type="button" class="login" (click)="openLogin()" > <i id="icon"class="fa fa-user-circle"></i>  <span class="login">Log In</span> </button>
+        </div>
+        <button id="user"></button>  
+         <button type="button" style="border: none;" (click)="openCart()">
+           <i class="fa fa-shopping-bag"></i>
+         </button>
+      
+        </div>
+      
+    </div>
+  </nav>
