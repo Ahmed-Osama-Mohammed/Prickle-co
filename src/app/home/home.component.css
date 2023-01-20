@@ -185,7 +185,7 @@ button.btn1 {
 }
 
 .about-text, .about3, .about-offer {
-    min-height: 23.69792vw;
+    height: 40.69792vw;
 }
 
 .about-offer {
@@ -193,12 +193,15 @@ button.btn1 {
 }
 
 .about-offer h1 {
-    font-size: 4.58333vw;
-	font-family: 'Oswald';
-	color: white;
-	font-weight: bolder;
-	text-transform: uppercase;
-	margin: 6.04167vw 9.84375vw 1.30208vw;
+   
+    font-size: 4vw;
+    font-family: 'Oswald';
+    color: white;
+    font-weight: bolder;
+    height: 41%;
+    text-transform: uppercase;
+    margin: 6.04167vw 141px 1.30208vw;
+
 }
 
 .about-offer .btn1:hover {
